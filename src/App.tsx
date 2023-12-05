@@ -1,26 +1,57 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card />
+      <Card />
     </div>
   );
 }
 
+function Card() {
+  return (
+  <div>
+    <CardImage />
+    <CardTitle />
+    <CardDescription />
+    <CardActions />
+  </div>
+  );
+}
+
+function CardImage(){
+  return (
+    <div>
+    </div>
+    );
+}
+
+function CardTitle(){
+  return (
+    <div>
+    </div>
+    );
+}
+
+function CardDescription(){
+  return (
+    <div>
+    </div>
+    );
+}
+function CardActions(){
+  return (
+    <div>
+      <CardActionBtn />
+    </div>
+    );
+}
+
+function CardActionBtn(){
+  return (
+    <div></div>
+    );
+}
 export default App;
